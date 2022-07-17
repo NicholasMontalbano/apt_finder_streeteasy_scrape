@@ -8,6 +8,7 @@ StreetEasy listings do not contain all of the information that a potential rente
   - park access, 
   - neighborhood safety
 - Combine information into an interactive table. 
+  - Hosted on [github pages](https://nicholasmontalbano.github.io/apt_finder_streeteasy_scrape/visuals/filter_table.html)
 
 
 <img src="visuals/tutorial.gif" width="1000" height="500"/>
