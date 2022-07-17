@@ -55,7 +55,7 @@ bash scripts/bash.sh
 Webscraper for StreetEasy rental data. Can be customized for different neighborhoods and amenitites by editing the URL in the code. Output is data/streeteasy.csv. 
 
 #### 02_travel.py
-Retrieves routing information using Geoapify to determine travel time, directions, and number of subway lines from each apartment to a preset list of destinations. Code can be customized to add as many destinations as desired and mode of transportation (default is subway). Input is data/streeteasy.csv and output is data/apt_csv.csv. 
+Retrieves routing information using Geoapify to determine travel time, directions, and number of subway lines from each apartment to a preset list of destinations. Code can be customized to add as many destinations as desired and mode of transportation (default is subway). Geoapify API is required. Input is data/streeteasy.csv and output is data/apt_csv.csv. 
 
 #### 03_metrics.py
 Retrieves park access data from NYC Council Data Team Park Equity github to determine amount of acres of park accessible within a 15-minute walk of the apartment's census tract. Also deteremines the number of NYPD arrests that have occurred in the apartment's census tract for the current year. Input is data/apt_csv.csv and output is data/apt_metrics.csv. 
