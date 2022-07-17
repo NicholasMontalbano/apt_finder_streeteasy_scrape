@@ -31,11 +31,11 @@ StreetEasy listings do not contain all of the information that a potential rente
 | Price | Monthly price listed on StreetEasy |
 | Beds | Number of Beds | 
 | Baths | Number of Baths |
-| SQFT | Rental square footage | 
+| SQFT | Square Feet | 
 | URL | StreetEasy listing URL |
-| Work_Time | Travel time from rental to work address (customizable)| 
+| Work_Time | Travel time (minutes) from rental to work address using subway | 
 | Work_Lines | Number of subway lines needed to reach work address (e.g. 2 indicates must transfer subways) |
-| Friend_Time | Travel time from rental to friend address (customizable)| 
+| Friend_Time | Travel time (minutes) from rental to friend address using subway | 
 | Friend_Lines | Number of subway lines needed to reach friend address (e.g. 2 indicates must transfer subways) |
 | Park_Acres | Accesible park acres per 1,000 residents within a 15 minute walk | 
 | Borough | Borough of rental |
