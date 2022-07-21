@@ -14,12 +14,15 @@ data <- apt_metrics %>%
          arrests_pc = round(arrests_pc * 1000, 1), 
          f_acre_pc = round(f_acre_pc * 1000, 1)) %>%
   select(!c(geo, work_directions, friend_directions, GEO_ID, f_acre_sum_uncap, f_acre_sum, population, med_income, arrests)) %>%
+  unique() %>%
   rename(
     park_acres = f_acre_pc,
     Borough = BoroName,
     arrests = arrests_pc, 
     place = neighborhood
   )
+
+write_csv(data, file = 'data/table_data.csv')
 
 ### create shared dataset for crosstalk
 crosstalk_data <- SharedData$new(data)
@@ -56,3 +59,4 @@ filter_table <- bscols(
 
 #htmlwidgets::saveWidget(table, file = 'visuals/table.html')
 htmltools::save_html(filter_table, file = 'visuals/filter_table.html')
+
