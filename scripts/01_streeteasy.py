@@ -103,13 +103,13 @@ class StreetEasyScraper():
                 writer.writerow(row)
 
     def run(self):
-        url = 'https://streeteasy.com/for-rent/nyc/price:-2400%7Carea:336,331,310,334,306,338,321,364,322,328,325,307,303,332,301,367,339,365,319,326,329,355,318,323,302,324,102,119,139,135,147,149,153,401,416,415,424,420,402,411,414,403,404%7Cbeds%3C=1%7Camenities:laundry?page=1'
+        url = 'https://streeteasy.com/for-rent/nyc/price:-2400%7Carea:336,331,310,334,306,338,305,321,364,322,328,325,307,303,332,304,320,301,367,340,339,365,319,326,329,355,318,323,302,324,102,119,139,135,155,148,147,165,149,153,401,416,415,424,420,402,411,414,403,404%7Cbeds%3C=1%7Camenities:laundry?page=1'
         res = self.fetch(url)
         self.parse_pagenum(res.text)
         time.sleep(3)
 
         for page in range(1,self.max_page + 1):
-            url = f'https://streeteasy.com/for-rent/nyc/price:-2400%7Carea:336,331,310,334,306,338,321,364,322,328,325,307,303,332,301,367,339,365,319,326,329,355,318,323,302,324,102,119,139,135,147,149,153,401,416,415,424,420,402,411,414,403,404%7Cbeds%3C=1%7Camenities:laundry?page={page}'
+            url = f'https://streeteasy.com/for-rent/nyc/price:-2400%7Carea:336,331,310,334,306,338,305,321,364,322,328,325,307,303,332,304,320,301,367,340,339,365,319,326,329,355,318,323,302,324,102,119,139,135,155,148,147,165,149,153,401,416,415,424,420,402,411,414,403,404%7Cbeds%3C=1%7Camenities:laundry?page={page}'
             res = self.fetch(url)
             self.parse(res.text)
             time.sleep(3)

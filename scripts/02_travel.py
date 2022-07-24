@@ -36,12 +36,12 @@ class Routing():
             self.lines.append(line)
 
     def run(self):
-        apiKey = '[API KEY HERE]'
+        apiKey = '5e77b7d1eb4941659372dc2532c8ebb4'
         mode = 'transit'
 
         dest_geos = {
             "work" : '40.712882,-74.00666',
-            "friend" : '40.774929,-73.908508',
+            "friend" : '40.778830,-73.908100',
             }
 
         for key, value in dest_geos.items():
